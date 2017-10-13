@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="prism.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/4.7.2/kinetic.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+	<LINK REL=StyleSheet HREF="prism.css" TYPE="text/css" >
+</head>
+<body onload="startup()">
+  <ul>
+<li class="active"><a href="lens_experiment.html">Lens</a></li>
+  <li><a href="mirror.html">Mirror</a></li>
+  <li><a href="prism.html">Prism</a></li>
+  <li><a href="optical_fiber.html">Optical_Fiber</a></li>
+</ul>
+<br>
+<div id="refersh">
+  <form>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button class="button" onclick="history.go(0)" value="Refresh">Refresh</button>
+  </form>
+</div>
+	<div id="main">
+	<div id="toolbar" align="center">
+	<div id="lensgroup" title="Drag and Drop upto two lenses">
+
+			<div id="labels">Prism</div>
+				<div id="prism" ><img id="lense0" name="prism0" class="prism" width=35 height=35 src="triangle1.png"></div>
+				<div id="prism"><img id="lense1" name="prism1" class="prism" width=35 height=35 src="triangle2.png"></div>
+				
+
+			</div></div>
+
+	<div id="container" align="center"></div>
+		<div id="toolbar" align="center">
+	<div id="objectgroup" title="Click one of these objects" >
+
+	<div id="labels">Objects</div>
+		<div id="object"><img id="object_arrow"  width=35% height=35% src="arr.png"></div>
+		
+		</div>
+	<div id="labels">Help</div>
+		<div id="help1"><img id="help"  width=35% height=35% src="help.png"></div>
+	</div>
+	</div>
+	<div class="overlay-bg">
+</div>
+<div class="overlay-content popup1">
+    <p># In the toolbar there is two prisms avaiable,one for indicate refraction and another for spectrum. <br /><br />
+# <b>Drag & Drop</b> the prism to the experiment area to place the prism <br /><br />
+# <b>Click</b> on the Object to place the object in experimental area <br /><br />
+# You can add only <b>one prism at one time</b> <br /><br />
+# You can <b>Drag</b> the prism to get ray diagram <br /><br />
+# <b>Double click</b> on the prism to remove the prism from the experimental area.<br /><br />
+# Here, the arrow consider as laser light source  <b>Arrow</b>
+</p>
+    <button class="close-btn">Close</button>
+</div>
+</body>
+</html>
